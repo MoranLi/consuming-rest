@@ -17,6 +17,9 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	compile ('mysql:mysql-connector-java')
+	compile group: 'org.springframework', name: 'spring-jdbc', version: '5.2.9.RELEASE'
+
 }
 
 test {
