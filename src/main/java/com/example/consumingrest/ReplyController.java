@@ -33,7 +33,7 @@ public class ReplyController {
         return new ReplyObj(sb.toString());
     }
 
-    @GetMapping("/allReply")
+    @GetMapping("/allreply")
     public ReplyObj getAllReply(){
         List<Map<String, Object>> list = component.getTemplate().queryForList("select * from reply");
         return buildReplyObj(list);

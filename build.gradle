@@ -19,7 +19,10 @@ dependencies {
 	}
 	compile ('mysql:mysql-connector-java')
 	compile group: 'org.springframework', name: 'spring-jdbc', version: '5.2.9.RELEASE'
-
+	compile("org.springframework.boot:spring-boot-starter-security")
+	compile("org.springframework.ldap:spring-ldap-core")
+	compile("org.springframework.security:spring-security-ldap")
+	compile("com.unboundid:unboundid-ldapsdk")
 }
 
 test {
